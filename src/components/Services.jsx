@@ -120,14 +120,23 @@ export default function Services() {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.35 }}
-        className="relative z-10 grid grid-cols-[80px_1fr] items-center gap-8"
+        className="
+relative z-10
+grid
+grid-cols-1
+sm:grid-cols-[80px_1fr]
+gap-6
+sm:gap-8
+text-center
+sm:text-left
+"
       >
         {/* ICON */}
-        <div className="flex justify-center lg:justify-start">
-          <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-accent text-4xl text-white shadow-glow">
-            <ActiveIcon />
-          </div>
-        </div>
+<div className="flex justify-center sm:justify-start">
+  <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-accent text-4xl text-white shadow-glow">
+    <ActiveIcon />
+  </div>
+</div>
 
         {/* CONTENT */}
 <div className="flex flex-col justify-between h-full">
