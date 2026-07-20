@@ -20,11 +20,11 @@ export default function About() {
           className="relative order-2 lg:order-1"
         >
           <div className="relative overflow-hidden rounded-[28px] shadow-card max-w-md mx-auto aspect-[4/5]">
-            <img
-              src="/images/about.jpg"
-              alt="Ahmed Khaled Workspace"
-              className="w-full h-full object-cover"
-            />
+    <img
+  src={`${import.meta.env.BASE_URL}images/about.jpg`}
+  alt="Ahmed Khaled Workspace"
+  className="w-full h-full object-cover"
+/>
 
             {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-primary/35 via-transparent to-transparent" />
