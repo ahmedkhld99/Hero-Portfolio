@@ -88,32 +88,15 @@ export default function Services() {
           description="From design to long-term management, everything your business website needs in one place."
         />
 
-<div className="mt-8 space-y-3 ">
-
-  {/* Row 1 */}
-  <div className="grid grid-cols-5 gap-3">
-    {services.slice(0, 5).map((service, i) => (
-      <ServiceCard
-        key={service.title}
-        service={service}
-        isActive={active === i}
-        onActivate={() => setActive(i)}
-      />
-    ))}
-  </div>
-
-  {/* Row 2 */}
-  <div className="grid grid-cols-4 gap-3 ">
-    {services.slice(5).map((service, i) => (
-      <ServiceCard
-        key={service.title}
-        service={service}
-        isActive={active === i + 5}
-        onActivate={() => setActive(i + 5)}
-      />
-    ))}
-  </div>
-
+<div className="mt-8 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+  {services.map((service, i) => (
+    <ServiceCard
+      key={service.title}
+      service={service}
+      isActive={active === i}
+      onActivate={() => setActive(i)}
+    />
+  ))}
 </div>
 <div className="mt-8 flex justify-center">
   <div
