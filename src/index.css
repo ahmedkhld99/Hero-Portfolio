@@ -7,10 +7,11 @@
     @apply scroll-smooth;
   }
 
-  html,
-  body {
-    @apply bg-white text-primary;
-  }
+html,
+body {
+  @apply bg-white text-primary;
+  -webkit-text-size-adjust: 100%;
+}
 
   body {
     font-family: 'Plus Jakarta Sans', sans-serif;

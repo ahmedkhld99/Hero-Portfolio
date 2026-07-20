@@ -28,13 +28,13 @@ export default function ServiceCard({
           <Icon className="text-lg" />
         </div>
 
-        <h3
-          className={`text-[14px] font-semibold leading-4 transition-colors ${
-            isActive ? 'text-white' : 'text-primary'
-          }`}
-        >
-          {service.title}
-        </h3>
+<h3
+  className={`text-[12px] sm:text-[14px] font-semibold leading-tight text-center ${
+    isActive ? 'text-white' : 'text-primary'
+  }`}
+>
+  {service.title}
+</h3>
 
       </div>
     </button>
