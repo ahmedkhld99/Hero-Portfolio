@@ -88,7 +88,7 @@ export default function Services() {
           description="From design to long-term management, everything your business website needs in one place."
         />
 
-<div className="mt-8 grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+<div className="mt-8 grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
   {services.map((service, i) => (
     <ServiceCard
       key={service.title}
@@ -124,11 +124,12 @@ export default function Services() {
 relative z-10
 grid
 grid-cols-1
-sm:grid-cols-[80px_1fr]
+md:grid-cols-[80px_1fr]
 gap-6
-sm:gap-8
+md:gap-8
 text-center
-sm:text-left
+md:text-left
+items-center
 "
       >
         {/* ICON */}
@@ -141,16 +142,24 @@ sm:text-left
         {/* CONTENT */}
 <div className="flex flex-col justify-between h-full">
   <div>
-    <h3 className="text-3xl font-bold text-white">
-      {services[active].title}
-    </h3>
+<h3 className="text-2xl sm:text-3xl font-bold text-white">
+  {services[active].title}
+</h3>
 
     <p className="mt-3 text-sm leading-6 text-white/70">
       {services[active].description}
     </p>
   </div>
 
-  <div className="mt-6 grid grid-cols-2 gap-x-10 gap-y-3">
+  <div className="
+    mt-6
+    grid
+    grid-cols-1
+    sm:grid-cols-2
+    gap-3
+    justify-items-center
+    md:justify-items-start
+">
     {services[active].features.map((feature) => (
       <div
         key={feature}
