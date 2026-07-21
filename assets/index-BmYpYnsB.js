@@ -64,10 +64,10 @@ text-center
 md:text-left
 items-center
 `,children:[g.jsx("div",{className:"flex justify-center md:justify-start",children:g.jsx("div",{className:"flex h-20 w-20 items-center justify-center rounded-2xl bg-accent text-4xl text-white shadow-glow",children:g.jsx(n,{})})}),g.jsxs("div",{className:"flex flex-col justify-between h-full",children:[g.jsxs("div",{children:[g.jsx("h3",{className:"text-2xl sm:text-3xl font-bold text-white",children:Mt[e].title}),g.jsx("p",{className:"mt-3 text-sm leading-6 text-white/70",children:Mt[e].description})]}),g.jsx("div",{className:`
-  mt-6
+   mt-6
   grid
-  grid-cols-2
-  max-[639px]:grid-cols-1
+  grid-cols-1
+  sm:grid-cols-2
   gap-3
   justify-items-center
   md:justify-items-start
